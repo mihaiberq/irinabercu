@@ -1,0 +1,42 @@
+body {
+    padding-top: 50px;
+    min-width: 468px;
+}
+
+p {
+    font-size: 16px;
+}
+
+pre .line .line-number {
+    display: none;
+}
+
+.jumbotron p:first-of-type{
+    margin-bottom: 30px;
+}
+
+.jumbotron h1{
+    font-weight: 800;
+}
+
+h2{
+    font-weight: 800;
+}
+
+h3, .h3 {
+    font-style: italic;
+}
+
+#toc {
+    border-radius: 0px !important;
+}
+
+@media (max-width: 991px) {
+  .tocify {
+    display: none;
+  }
+}
+
+.small {
+  font-size: 12px;
+}
