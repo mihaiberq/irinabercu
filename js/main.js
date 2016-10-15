@@ -6,7 +6,7 @@ Version: 1.0
 */
 
 /* ==================================================================
- 
+
  * Table of Contents:
  *
  * 1.0 - Load functions
@@ -28,21 +28,21 @@ Version: 1.0
 
 $(window).load(function(){
 	 "use strict";
-         
-	    setTimeout(function(){               
+
+	    setTimeout(function(){
 		    $('.wp-loader').velocity({
 	            opacity : 0,translateY: "-60px"}, {duration: 450,
 		    	complete: function(){
 	                $('#bg-loader').velocity({translateY : "-100%"},{duration: 1250,easing: [0.7,0,0.3,1],display: "none"}
 	            )}
-		    })      
+		    })
 	    },800);
 
-	    setTimeout(function(){   
+	    setTimeout(function(){
 	  		$(".vegas-container").addClass("scale-show");
 	    },1000);
-  
-  		setTimeout(function(){     	
+
+  		setTimeout(function(){
 			$(".heading-text-1").addClass("slideInUp animated");
 	  		$(".heading-text-2").addClass("slideInUp delay animated");
 	    },1800);
@@ -56,28 +56,20 @@ $(document).ready(function() {
 		var main = $(".bg-images");
 		main.vegas({
 		    slides: [
-		       { src: "img/background.jpg" },  //('jump',0)
-		       { src: "img/background.jpg" },  //('jump',1)
-		       { src: "img/background.jpg" },  //('jump',2)
-		       { src: "img/background.jpg" },  //('jump',3)
-		       { src: "img/background.jpg" },  //('jump',4)
-		       { src: "img/background.jpg" },  //('jump',5)
-		       { src: "img/background.jpg" },  //('jump',6)
-		       { src: "img/background.jpg" },  //('jump',7)
-		       { src: "img/background.jpg" }   //('jump',8)
+		       { src: "img/lookingatcamera.jpg" }
 		    ],
 		    delay:300,
 		    timer:false,
 		    autoplay:false,
-		    align:'58%'	    
-		});	
-		
+		    align:'58%'
+		});
+
 		if ($.vegas.isNotMobile()) {
-		var morph = $(".morph"); 
-		var morph_title = $(".morph-title"); 
-		
+		var morph = $(".morph");
+		var morph_title = $(".morph-title");
+
 		//ABOUT
- 		var about = $(".button-a"); 
+ 		var about = $(".button-a");
 	    about.on("click", function(){
 	     	if (!morph.hasClass("open")) {
 	        main.vegas('options', 'transition', 'fade').vegas('jump',0);
@@ -85,7 +77,7 @@ $(document).ready(function() {
 	    });
 
  		//PROJECT1
-	    var mp_1 = $(".mp_1").find(morph_title); 
+	    var mp_1 = $(".mp_1").find(morph_title);
 	    mp_1.on("mouseenter", function(){
 	     	if (!morph.hasClass("open")) {
 	        main.vegas('options', 'transition', 'fade').vegas('jump',1);
@@ -93,7 +85,7 @@ $(document).ready(function() {
 	    });
 
  		//PROJECT2
-	    var mp_2 = $(".mp_2").find(morph_title); 
+	    var mp_2 = $(".mp_2").find(morph_title);
 	    mp_2.on("mouseenter", function(){
 	     	if (!morph.hasClass("open")) {
 	        main.vegas('options', 'transition', 'fade').vegas('jump',2);
@@ -101,7 +93,7 @@ $(document).ready(function() {
 	    });
 
 	    //PROJECT3
-	    var mp_3 = $(".mp_3").find(morph_title); 
+	    var mp_3 = $(".mp_3").find(morph_title);
 	    mp_3.on("mouseenter", function(){
 	     	if (!morph.hasClass("open")) {
 	        main.vegas('options', 'transition', 'fade').vegas('jump',3);
@@ -109,7 +101,7 @@ $(document).ready(function() {
 	    });
 
 	    //PROJECT4
-	    var mp_4 = $(".mp_4").find(morph_title); 
+	    var mp_4 = $(".mp_4").find(morph_title);
 	    mp_4.on("mouseenter", function(){
 	     	if (!morph.hasClass("open")) {
 	        main.vegas('options', 'transition', 'fade').vegas('jump',4);
@@ -117,7 +109,7 @@ $(document).ready(function() {
 	    });
 
 	    //PROJECT5
-	    var mp_5 = $(".mp_5").find(morph_title); 
+	    var mp_5 = $(".mp_5").find(morph_title);
 	    mp_5.on("mouseenter", function(){
 	     	if (!morph.hasClass("open")) {
 	        main.vegas('options', 'transition', 'fade').vegas('jump',5);
@@ -125,7 +117,7 @@ $(document).ready(function() {
 	    });
 
 	    //PROJECT6
-	    var mp_6 = $(".mp_6").find(morph_title); 
+	    var mp_6 = $(".mp_6").find(morph_title);
 	    mp_6.on("mouseenter", function(){
 	     	if (!morph.hasClass("open")) {
 	        main.vegas('options', 'transition', 'fade').vegas('jump',6);
@@ -133,7 +125,7 @@ $(document).ready(function() {
 	    });
 
 	    //LONDON
-	    var mo_1 = $(".mo_1").find(morph_title); 
+	    var mo_1 = $(".mo_1").find(morph_title);
 	    mo_1.on("mouseenter", function(){
 	     	if (!morph.hasClass("open")) {
 	        main.vegas('options', 'transition', 'fade').vegas('jump',7);
@@ -141,14 +133,14 @@ $(document).ready(function() {
 	    });
 
 	    //PARIS
-	    var mo_2 = $(".mo_2").find(morph_title); 
+	    var mo_2 = $(".mo_2").find(morph_title);
 	    mo_2.on("mouseenter", function(){
 	     	if (!morph.hasClass("open")) {
 	        main.vegas('options', 'transition', 'fade').vegas('jump',8);
 	        }
 	    });
 	    }
-		
+
 	    //SKROLL (PARALLAX)
 		var s = skrollr.init({forceHeight:false});
 		if (s.isMobile()) {
@@ -162,42 +154,42 @@ $(document).ready(function() {
 		}
 		responsiveHeading();
 		$(window).on('resize', function(){
-			responsiveHeading();  	  
+			responsiveHeading();
 		});
-		
-		//MORPH OPEN		
+
+		//MORPH OPEN
 		$(".morph-title").on("click", function(e) {
 			if (!$(".morph").hasClass("open")) {
 				$('.left-container').removeClass("col-md-5").addClass('col-md-4');
 	        	$(this).parent().addClass("open").siblings().removeClass("open");
 	        	$('.morph-show').find('.morph-title').not(this).addClass('fade').parent().addClass('pointer');
-	        	$('.button-group-menu').addClass("low-opa");  
-	        	$('.morph-close').addClass("open-close-button"); 
+	        	$('.button-group-menu').addClass("low-opa");
+	        	$('.morph-close').addClass("open-close-button");
         		$('.animated-overlay').animate({"top":"0%"}, 150);
 				if ($(window).width() > 1024) {
 					$("html, body").animate({ scrollTop: 0 }, 0);
 				}
-			} 
+			}
 			setTimeout(function(){
             	responsiveHeading();
-         	}, 450);   
-         	e.stopPropagation(); 
+         	}, 450);
+         	e.stopPropagation();
     	});
-    	//MORPH CLOSE	
+    	//MORPH CLOSE
 		$(".morph-close,.morph-close-mobile").on("click", function(e) {
 			setTimeout(function(){
 				$('.left-container').removeClass("col-md-4").addClass('col-md-5');
-				$('.open').addClass("pointer"); 
+				$('.open').addClass("pointer");
 	        	$('.morph').removeClass('open');
-	        	$('.morph-close').removeClass("open-close-button"); 
+	        	$('.morph-close').removeClass("open-close-button");
 		        $('.animated-overlay').animate({"top":"100%"}, 0);
         	},65)
          	setTimeout(function(){
-		     	$(".morph").children().removeClass('fade'); 
-		     	$('.button-group-menu').removeClass("low-opa") ;  
+		     	$(".morph").children().removeClass('fade');
+		     	$('.button-group-menu').removeClass("low-opa") ;
     		},350)
     		setTimeout(function(){
-            	responsiveHeading();	
+            	responsiveHeading();
          	}, 450);
          	setTimeout(function(){
     			$('.morph').removeClass("pointer");
@@ -209,7 +201,7 @@ $(document).ready(function() {
     	});
 
 		//CAROUSEL
-		var carousel = $(".owl-carousel") ;          
+		var carousel = $(".owl-carousel") ;
 		carousel.slick({
 	        infinite: true,
 	  		slidesToShow: 4,
@@ -261,19 +253,19 @@ $(document).ready(function() {
 		$(".navigation ul .prev").on("click", function() {
 		    carousel.slick('slickPrev');
 		});
-		
+
 		//DISABLE ISOTOPE TRANSITIONS
 		Isotope.prototype._positionItem = function( item, x, y ) {
 		    item.goTo( x, y );
 		};
-	  	
+
 	  	//DISABLE RESIZE IF CONTENT OPEN
 	 	Isotope.prototype.onresize = function( ) {
 			if (!$(".morph").hasClass("open")) {
 		    	this.resize();
 		   }
 		};
-		
+
 		//ADD-REMOVE CLASS ON REVEAL
 		var itemReveal = Isotope.Item.prototype.reveal;
 		Isotope.Item.prototype.reveal = function() {
@@ -290,7 +282,7 @@ $(document).ready(function() {
 		//ISOTOPE (GRID)
 		var $grid = $('#grid').isotope({
       		layoutMode: 'vertical',
-      		filter: '.offices',//THIRD	
+      		filter: '.offices',//THIRD
      		itemSelector:".morph",
       		percentPosition: true,
       		transitionDuration: '0',
@@ -316,7 +308,7 @@ $(document).ready(function() {
 		    var $buttonGroup = $( buttonGroup );
 		    $buttonGroup.on( 'click', 'button', function() {
 		      $buttonGroup.find('.is-checked-menu').removeClass('is-checked-menu');
-		      $( this ).addClass('is-checked-menu');		  
+		      $( this ).addClass('is-checked-menu');
 		    });
 		});
 
@@ -327,13 +319,13 @@ $(document).ready(function() {
 	            	$grid.isotope('layout');
 	            }
         	},1500)
-        }); 
-		
+        });
+
 		//INIT HIDE CAROUSEL
 		$grid.on( 'arrangeComplete', function( event, filteredItems ) {
 		    if ($(".button-group-menu ul li .button-b").hasClass("is-checked-menu")) {
-		        carousel.slick('setPosition');   
-		    } 
+		        carousel.slick('setPosition');
+		    }
 		});
 
 		//GOOGLE MAP
@@ -380,14 +372,14 @@ $(document).ready(function() {
 					//PARIS MAP
 					google.maps.event.trigger(map2, 'resize');
 					map2.setCenter(location2);
-		      	} 
+		      	}
 			});
 	    }
     	initializeGoogleMap();
 
 	  	//PHOTOSWIPE
 	    var initPhotoSwipeFromDOM = function(gallerySelector) {
-	    // parse slide data (url, title, size ...) from DOM elements 
+	    // parse slide data (url, title, size ...) from DOM elements
 	    // (children of gallerySelector)
 	    var parseThumbnailElements = function(el) {
 	        var thumbElements = el.childNodes,
@@ -402,7 +394,7 @@ $(document).ready(function() {
 
 	            figureEl = thumbElements[i]; // <figure> element
 
-	            // include only element nodes 
+	            // include only element nodes
 	            if(figureEl.nodeType !== 1) {
 	                continue;
 	            }
@@ -420,13 +412,13 @@ $(document).ready(function() {
 
 	            if(figureEl.children.length > 1) {
 	                // <figcaption> content
-	                item.title = figureEl.children[1].innerHTML; 
+	                item.title = figureEl.children[1].innerHTML;
 	            }
 
 	            if(linkEl.children.length > 0) {
 	                // <img> thumbnail element, retrieving thumbnail url
 	                item.msrc = linkEl.children[0].getAttribute('src');
-	            } 
+	            }
 
 	            item.el = figureEl; // save link to element for getThumbBoundsFn
 	            items.push(item);
@@ -465,8 +457,8 @@ $(document).ready(function() {
 	            index;
 
 	        for (var i = 0; i < numChildNodes; i++) {
-	            if(childNodes[i].nodeType !== 1) { 
-	                continue; 
+	            if(childNodes[i].nodeType !== 1) {
+	                continue;
 	            }
 
 	            if(childNodes[i] === clickedListItem) {
@@ -497,10 +489,10 @@ $(document).ready(function() {
 	            if(!vars[i]) {
 	                continue;
 	            }
-	            var pair = vars[i].split('=');  
+	            var pair = vars[i].split('=');
 	            if(pair.length < 2) {
 	                continue;
-	            }           
+	            }
 	            params[pair[0]] = pair[1];
 	        }
 
@@ -531,7 +523,7 @@ $(document).ready(function() {
 	        // PhotoSwipe opened from URL
 	        if(fromURL) {
 	            if(options.galleryPIDs) {
-	                // parse real index when custom PIDs are used 
+	                // parse real index when custom PIDs are used
 	                // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
 	                for(var j = 0; j < items.length; j++) {
 	                    if(items[j].pid == index) {
@@ -579,25 +571,25 @@ $(document).ready(function() {
 		initPhotoSwipeFromDOM('.my-gallery');
 
 	    //CONTACT FORM
-	    $("#contactForm input,#contactForm textarea").jqBootstrapValidation({       
+	    $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
 	        preventSubmit: true,
 	        submitError: function($form, event, errors) {
 	        },
 	        submitSuccess: function($form, event) {
-	        event.preventDefault(); 
-	        var name = $("input#name").val();  
-	        var email = $("input#email").val(); 
+	        event.preventDefault();
+	        var name = $("input#name").val();
+	        var email = $("input#email").val();
 	        var message = $("textarea#message").val();
-	        var firstName = name; 
+	        var firstName = name;
 	        if (firstName.indexOf(' ') >= 0) {
 	        firstName = name.split(' ').slice(0, -1).join(' ');
-	        }        
+	        }
 	        $.ajax({
 	            url: "js/mailer.php",
 	            type: "POST",
 	            data: {name: name, email: email, message: message},
 	            cache: false,
-	            success: function() {  
+	            success: function() {
 	            // Success message
 	            $('#success').html("<div class='alert alert-success'>");
 	            $('#success > .alert-success').append("Your message has been sent. ");
@@ -605,7 +597,7 @@ $(document).ready(function() {
 	            //clear all fields
 	            $('#contactForm').trigger("reset");
 	            },
-	            error: function() {      
+	            error: function() {
 	            // Fail message
 	            $('#success').html("<div class='alert alert-danger'>");
 	            $('#success > .alert-danger').append("Sorry "+firstName+" it seems that my mail server is not responding");
