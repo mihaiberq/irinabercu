@@ -331,49 +331,7 @@ $(document).ready(function() {
 		//GOOGLE MAP
 	    function initializeGoogleMap() {
 	        var styles = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#0c0b0b"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#090909"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#d4e4eb"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#fef7f7"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#9b7f7f"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#fef7f7"}]}];
-	        //LONDON MAP
-	        var location1 = new google.maps.LatLng(51.507193,-0.127802);
-	        var map1 = new google.maps.Map(document.getElementById('map_div_1'), {
-	      		center: location1,
-		        zoom: 15,
-		        scrollwheel: false,
-		        navigationControl: false,
-		        mapTypeControl: false,
-		        scaleControl: false,
-		        disableDefaultUI: true,
-		        styles: styles
-    		});
-    		var marker1 = new google.maps.Marker({
-	        	position: location1
-	        });
-	        marker1.setMap(map1);
-    		//PARIS MAP
-    		var location2 = new google.maps.LatLng(48.856527,2.352104);
-    		var map2 = new google.maps.Map(document.getElementById('map_div_2'), {
-	      		center: location2,
-		        zoom: 15,
-		        scrollwheel: false,
-		        navigationControl: false,
-		        mapTypeControl: false,
-		        scaleControl: false,
-		        disableDefaultUI: true,
-		        styles: styles
-    		});
-    		var marker2 = new google.maps.Marker({
-	        	position: location2
-	        });
-	        marker2.setMap(map2);
-			//RELOAD GOOGLE MAPS
-	        $grid.on( 'arrangeComplete', function( event, filteredItems ) {
-		    	if ($(".button-group-menu ul li .button-c").hasClass("is-checked-menu")) {
-		    		//LONDON MAP
-		    		google.maps.event.trigger(map1, 'resize');
-					map1.setCenter(location1);
-					//PARIS MAP
-					google.maps.event.trigger(map2, 'resize');
-					map2.setCenter(location2);
-		      	}
-			});
+
 	    }
     	initializeGoogleMap();
 
@@ -612,4 +570,11 @@ $(document).ready(function() {
 	            }
 	    });
 
+
+
 });
+function goToVideo(){
+	var win = window.open("https://www.youtube.com/watch?v=XkM1kV0umv0", '_blank');
+	console.log("click");
+	win.focus();
+}
