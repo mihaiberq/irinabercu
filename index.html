@@ -78,7 +78,7 @@
 					<div class="button-group-menu filters-button-group-menu">
 						<ul>
 							<li style="font-size:1.6em;"><button class="button-a button-menu is-checked-menu" data-filter=".about">About Me</button></li>
-							<li style="font-size:1.6em;"><button class="button-b button-menu" data-filter=".projects">Résumé</button></li>
+							<li style="font-size:1.6em;"><button class="button-b button-menu" data-filter=".about" onclick="goToResume();">Résumé</button></li>
 							<li style="font-size:1.6em;"><button class="button-c button-menu" data-filter=".about" onclick="goToVideo();">Video</button></li>
 						</ul>
 					</div>
@@ -192,78 +192,73 @@
 									<h1>Cooking and the planet</h1>
 								</div>
 								<div class="column">
-									<p style="font-weight:700;">Ingredients:</p>
-									<div class="row column-img">
-										<div class="col-md-4 pull-right">
-											<img class="img-responsive" style="position: absolute;"src="img/chef.png" itemprop="thumbnail" alt="Image description" />
-										</div>
+									<div class="col-md-4">
+										<img class="img-responsive" src="img/chef.png" itemprop="thumbnail" alt="Image description" />
 									</div>
-									<div class="row col-md-6">
+									<div class="col-md-8">
+										<p style="font-weight:700;">Ingredients:</p>
+									</div>
+									<div class="row col-md-8">
 										<p>- 3 to 4 large documentaries;</p>
 									</div>
-								</div>
-									<div class="column">
-									<div class="row col-md-6">
+									<div class="row col-md-8">
 										<p>- a pinch of ethics;</p>
 									</div>
-									</div>
-									<div class="column">
-									<div class="row col-md-6">
+									<div class="row col-md-8">
 										<p>- 1/2 touch of compassion;</p>
 									</div>
-									</div>
-							<div class="column">
-									<div class="row col-md-6">
+									<div class="row col-md-8">
 										<p>- 1 lifetime of need to eat for survival.</p>
 									</div>
-							</div>
-							<div class="column">
-								<div class="row">
+									<div class="col-md-8">
+										<br>
+										<p style="font-weight:700;">Step 1:</p>
+										<div class="row">
+											<p>Chop up a few documentaries on global warming and animal welfare.</p>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<br>
+										<p style="font-weight:700;">Step 2:</p>
+										<div class="row">
+											<p>Add morals and compassion to taste and realize that going vegan is the kind and ethical thing you can do both for the planet and animals.</p>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<br>
+										<p style="font-weight:700;">Step 3:</p>
+										<div class="row">
+											<p>Let ideas rise in a warm place, I used my head in this case, while you research a healthy way of aligning your behavior to the values you stand for.</p>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<br>
+										<p style="font-weight:700;">Step 4:</p>
+										<div class="row">
+											<p>Roll the now formed dough onto a flat surface and knead it until you learn how to cook your favorite meals and it becomes an enjoyable hobby.</p>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<br>
+										<p style="font-weight:700;">Step 5:</p>
+										<div class="row">
+											<p>Place the mixture into a pan and cook it in the preheated oven for a few years or until golden brown.</p>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<br>
+										<p style="font-weight:700;">Step 6:</p>
+										<div class="row">
+											<p>Take it out of the oven and voilá!</p>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<br>
+										<div class="row">
+										<p><span style="font-weight:700;">N.B.</span> Best when shared with friends.</p>
+									</div>
+									</div>
 								</div>
-							</div>
-							<div class="column">
-								<p style="font-weight:700;">Step 1:</p>
-								<div class="row">
-									<p>Chop up a few documentaries on global warming and animal
-										<br>welfare.</p>
-								</div>
-							</div>
-							<div class="column">
-								<p style="font-weight:700;">Step 2:</p>
-								<div class="row">
-									<p>Add morals and compassion to taste and realize that going
-										<br>vegan is the kind and ethical thing you can do both for the planet and animals.</p>
-								</div>
-							</div>
-							<div class="column">
-								<p style="font-weight:700;">Step 3:</p>
-								<div class="row">
-									<p>Let ideas rise in a warm place, I used my head in this case, while you research a healthy way of aligning your behavior to the values you stand for.</p>
-								</div>
-							</div>
-							<div class="column">
-								<p style="font-weight:700;">Step 4:</p>
-								<div class="row">
-									<p>Roll the now formed dough onto a flat surface and knead it until you learn how to cook your favorite meals and it becomes an enjoyable hobby.</p>
-								</div>
-							</div>
-							<div class="column">
-								<p style="font-weight:700;">Step 5:</p>
-								<div class="row">
-									<p>Place the mixture into a pan and cook it in the preheated oven for a few years or until golden brown.</p>
-								</div>
-							</div>
-							<div class="column">
-								<p style="font-weight:700;">Step 6:</p>
-								<div class="row">
-									<p>Take it out of the oven and voilá!</p>
-								</div>
-							</div>
-							<div class="column">
-								<div class="col-md-6 pull-right">
-								<p><span style="font-weight:700;">N.B.</span> Best when shared with friends.</p>
-								</div>
-							</div>
 							<span class="morph-close-mobile"></span>
 						</div>
 						</div><!-- END AWARDS -->
@@ -275,20 +270,27 @@
 							</div>
 							<div class="morph-content">
 								<div class="column">
+									<div class="col-md-4 pull-right">
+										<img class="img-responsive" src="img/researcher.png" itemprop="thumbnail" alt="Image description" />
+									</div>
+								<div class="col-md-8">
 									<div class="row">
 										<p>In 10<sup>th</sup> grade, our teacher told us about a project, <strong>Research for Humanity</strong>, which brought together students and scientists for a better future. There were only 4 spots on the team for the whole high school, so competition was remarkably high and I was lucky enough to secure a spot through my persistence and academic performance.</p>
 									</div>
 								</div>
-								<div class="column">
+								<div class="col-md-8">
 									<div class="row">
+										<br>
 										<p>In collaboration with the anthropologists from <strong>"Francisc I. Rainer" Anthropology Institute of the Romanian Academy</strong>, our goal was to conduct our own study over the course of 10 months, learn to process data, and manage our own booth at the <strong>Europeans Researchers Night 2015</strong>, where we had to inform people about our findings. I slowly fell in love with the methods used as well as the interaction with our mentors and subjects, as we got to know them better. </p>
-										</div>
+									</div>
 								</div>
-								<div class="column">
+								<div class="col-md-12">
 									<div class="row">
+										<br>
 										<p>There is something satisfying about knowing that because of our efforts, people know more about how a competitive nature manifests among high schoolers and how that affects their social skills.</p>
 									</div>
 								</div>
+							</div>
 							</div>
 							<span class="morph-close-mobile"></span>
 						</div><!-- END CONTACT -->

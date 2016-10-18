@@ -564,6 +564,16 @@ html,
     white-space: nowrap;
 }
 
+@media(max-width: 720px){
+	.main-heading h1{
+		color: #db5b79;
+	}
+	.main-heading h2{
+		color: #db5b79;
+	}
+}
+
+
 .sub-heading {
     padding: 0 0 30px;
 }

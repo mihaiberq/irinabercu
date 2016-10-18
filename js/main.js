@@ -575,6 +575,10 @@ $(document).ready(function() {
 });
 function goToVideo(){
 	var win = window.open("https://www.youtube.com/watch?v=XkM1kV0umv0", '_blank');
-	console.log("click");
+	win.focus();
+}
+
+function goToResume(){
+	var win  = window.open("Site/cvbuncompressed.pdf",'_blank');
 	win.focus();
 }
